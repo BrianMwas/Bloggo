@@ -21,13 +21,13 @@
 </script>
 
 <script>
-import { goto } from '$app/navigation';
+	import { goto } from '$app/navigation';
 
     import BlogForm from "../../../../lib/blog/blog-form.svelte"
     export let blog
 
     async function updateBlogDetails(event) {
-        setDoc(blogDoc(blog.id), event.detail, { merge: true })
+        await setDoc(blogDoc(blog.id), event.detail, { merge: true })
         await goto("/admin")
     }
 </script>

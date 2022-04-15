@@ -30,7 +30,6 @@ import { blogCollection, blogDoc } from '../../firebase';
 
 <script>
 	import BlogCard from '../../lib/blog/blog-card.svelte';
-	
 	//Delete a blog
 	async function deleteBlog(event) {
 		await deleteDoc(blogDoc(event.detail.id))

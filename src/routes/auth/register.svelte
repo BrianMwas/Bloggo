@@ -6,7 +6,7 @@
 	import { auth, userDoc } from '../../firebase';
 	import { setDoc } from 'firebase/firestore/lite';
 
-	export let errors;
+	 let errors;
 
 	async function signUp(event) {
 		try {
