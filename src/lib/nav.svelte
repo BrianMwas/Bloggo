@@ -25,7 +25,7 @@
 		{#if $session['user'] != null}
 		
 			<li>
-				<Button size="sm" kind="danger" on:click={logOut}>Log Out</Button>
+				<Button kind="danger" on:click={logOut}>Log Out</Button>
 			</li>
 			<li>
 				<Link href="/admin/create-blog">Create a new post</Link>
